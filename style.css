@@ -27,16 +27,17 @@ header {
 }
 
 .card {
-    
+    position: relative;
+    top: 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #9B3F64;
+    background: #662e42;
     margin: 20px;
     border-radius: 28px;
     height: 90vh;
-    margin-bottom: 15vh;
+    margin-bottom: 25vh;
     color: white;
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
@@ -45,7 +46,7 @@ header {
     font-family: "Fira Sans Condensed" !important;
     margin-top: 0;
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.6px;
 }
 
