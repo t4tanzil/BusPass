@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#9B3F64">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Transit Pass">
+    <title>Transit Pass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div id="hamburgerIcon">
+        <img src="menu.png" alt="menu">
+    </div>
+    <div id="backbutton">
+        <img src="left.png" alt="back">
+    </div>
+</header>
+<div class="card">
+    <p>Adult Single Ride</p>
+
+    <div id="date" class="date"></div>
+    <div id="time" class="time"></div>
+
+    <p class="agency">Barrie Transit</p>
+
+    <img src="bus.gif" class="bus">
+
+    <button id="expireBtn">Expire</button>
+
+    <p id="expireText" class="expire">
+        This pass expires after 116 minutes
+    </p>
+
+    <p class="userid">User ID 1111697050</p>
+</div>
+
+<!-- Bottom Nav -->
+<div class="bottom-nav">
+    <div class="nav-item">
+        <img src="ic_home.png">
+        <span>Home</span>
+    </div>
+    <div class="nav-item">
+        <img src="ic_parking.png">
+        <span>Parking</span>
+    </div>
+    <div class="nav-item active">
+        <img src="ic_bus.png">
+        <span>Transit</span>
+    </div>
+    <div class="nav-item">
+        <img src="ic_id.png">
+        <span>Permits</span>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+</body>
+</html>

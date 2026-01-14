@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+p{
+    letter-spacing: 0.6px;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+#hamburgerIcon img, #backbutton img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.card {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #9B3F64;
+    margin: 20px;
+    border-radius: 28px;
+    height: 90vh;
+    margin-bottom: 15vh;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.card p {
+    font-family: "Fira Sans Condensed" !important;
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+}
+
+.date {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    letter-spacing: 0.7px;
+}
+
+.time {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    letter-spacing: 0.3px;
+}
+
+.agency {
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.bus {
+    width: 260px;
+    height: auto;
+    margin:  13px;
+}
+
+button {
+    background: #FF4C4C;
+    border: none;
+    color: white;
+    padding: 7px 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+button:disabled {
+    background: #999;
+}
+
+.expire {
+    font-size: 22px;
+    text-align: center;
+    max-width: 260px;
+    font-weight: 650 !important;
+    margin: 1rem;
+}
+
+.userid {
+    font-size: 14px;
+    color: #E0E0E0;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.nav-item img {
+    width: 40px;
+}
+
+.active span {
+    font-weight: normal;
+}
