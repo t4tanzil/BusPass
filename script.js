@@ -36,3 +36,22 @@ expireBtn.onclick = () => {
     expireBtn.disabled = true;
     expireBtn.textContent = "Expired";
 };
+
+const form = document.getElementById("passForm");
+const input = document.getElementById("codeInput");
+const card = document.querySelector(".card");
+
+const CORRECT_CODE = 2232; // <-- change this to whatever number you want
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop page refresh
+
+    if (Number(input.value) === CORRECT_CODE) {
+        card.style.display = "flex";   // show pass
+        document.getElementById("passcode").style.display = "none"; // hide keypad
+        document.body.classList.remove("locked"); // after correct code
+
+    } else {
+        document.getElementById("submitfeild").value = "Fuck You BRO";
+    }
+});

@@ -29,7 +29,7 @@ header {
 .card {
     position: relative;
     top: 55px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -133,4 +133,53 @@ button:disabled {
 
 .active img {
     width: 38px !important;
+}
+/* FULL SCREEN PASSCODE BLOCKER */
+#passcode {
+    position: fixed;
+    inset: 0;                 /* top:0 right:0 bottom:0 left:0 */
+    width: 100vw;
+    height: 100vh;
+
+    background: #9B3F64;      /* matches your theme */
+    z-index: 10000;           /* higher than header + bottom nav */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Passcode form layout */
+#passcode form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Passcode input */
+#passcode input[type="number"] {
+    font-size: 26px;
+    padding: 14px;
+    width: 200px;
+    text-align: center;
+
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+
+/* Submit button */
+#passcode input[type="submit"] {
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 25px;
+
+    border: none;
+    background: white;
+    color: #9B3F64;
+    font-weight: 600;
+    cursor: pointer;
+}
+body.locked {
+    overflow: hidden;
 }
