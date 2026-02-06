@@ -124,9 +124,7 @@ body {
 
 /* ---------- FOOTER ---------- */
 .footer {
-    position: absolute;
-    bottom: 0;
-    height: 25vh;
+    height:auto;
     width: 100%;
     background: #0b3d0b;
     color: white;
