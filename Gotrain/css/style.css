@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-y: hidden;
+}
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+    height: auto;
+    width: 100%;
+    background: #0b3d0b;
+    color: white;
+    text-align: center;
+    padding: 30px 15px 25px;
+}
+
+.goLogo {
+    width: 110px;
+    filter: brightness(0) invert(1);
+    margin-bottom: 15px;
+}
+
+.location {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* ---------- INFO SECTION ---------- */
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    border-top: 6px solid #0b7a2f;
+}
+
+.infoTicket {
+    
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.infoTicket img{
+    width: 100%;
+}
+
+.barcode {
+    width: 100%;
+    background-image: url(../img/IMG_4818.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+}
+
+.barcode p {
+    
+    align-items:center ;
+    justify-content: center;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: #0f5a0f;
+}
+
+/* ---------- TIME SECTION ---------- */
+.time {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5px;
+}
+.time div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.time p {
+    font-weight: bolder;
+    font-size: 15px;
+}
+.currentrunningtime,.activitionRunningTime {
+    font-size: 18px !important;
+    font-weight: 700;
+    margin-top: 5px;
+    color: #555;
+}
+
+
+/* ---------- FOOTER ---------- */
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 25%;
+    width: 100%;
+    background: #0b3d0b;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.showprof {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* BIG COUNTDOWN TIMER */
+.timer {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+/* Animation */
+@keyframes goPulse {
+    0% {
+        background-color: #0b3d0b;
+    }
+    50% {
+        background-color: #0f5a0f;
+    }
+    100% {
+        background-color: #0b3d0b;
+    }
+}
+
+@keyframes textPulse {
+    0% {
+        color: #ffffff;
+    }
+    50% {
+        color: #5f945f;
+    }
+    100% {
+        color: #ffffff;
+    }
+}
+@keyframes goSlide {
+    0% {
+        transform: translateX(120%);
+    }
+    100% {
+        transform: translateX(-120%);
+    }
+
+}
+
+.header,
+.footer {
+    animation: goPulse 2s infinite ease-in-out;
+}
+
+.barcode p {
+    animation: textPulse 2s infinite ease-in-out;
+}
+.headerWraper {
+    width: 100%;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    margin:5px 0 25px 0;
+    animation: goSlide 5s linear infinite;
+}
+.circle{
+    position: absolute;
+    top: 23.5%;
+    background-color:#0b7a2f;
+    height: 20px;
+    width: 20px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
