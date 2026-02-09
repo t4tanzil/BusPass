@@ -42,6 +42,9 @@ body {
 
 /* ---------- INFO SECTION ---------- */
 .info {
+    position: relative;
+    top: -1rem;
+    left: -.6rem;
     background-color: white;
     display: flex;
     flex-direction: column;
