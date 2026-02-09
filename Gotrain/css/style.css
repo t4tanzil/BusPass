@@ -19,12 +19,12 @@ body {
 
 /* ---------- HEADER ---------- */
 .header {
-    height: 25vh;
+    height: auto;
     width: 100%;
     background: #0b3d0b;
     color: white;
     text-align: center;
-    padding-top: 1rem;
+    padding: 1rem;
     border-bottom: 0.375rem solid #0b7a2f; /* 6px */
 
 }
@@ -127,6 +127,8 @@ body {
 
 /* ---------- FOOTER ---------- */
 .footer {
+    position: relative;
+    top: -1rem;
     height:auto;
     width: 100%;
     background: #0b3d0b;
@@ -182,7 +184,7 @@ body {
 }
 
 .header,
-.footer {
+.footer,body {
     animation: goPulse 2s infinite ease-in-out;
 }
 
