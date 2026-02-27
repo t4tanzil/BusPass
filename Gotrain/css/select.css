@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
 }
 
 body {
@@ -20,20 +21,22 @@ body {
     color: #0b3d0b;
     padding: 2rem;
     border-radius: 12px;
-    width: 320px;
+    width: 70%;
+    height: 60%;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-weight: 700;
 }
 
 label {
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1.7rem;
     display: block;
-    margin: 0.8rem 0 0.3rem;
+    margin: 0.8rem 0 1.8rem;
 }
 
 select {
@@ -41,12 +44,12 @@ select {
     padding: 0.6rem;
     border-radius: 6px;
     border: 2px solid #0b7a2f;
-    font-size: 0.9rem;
+    font-size:1.2rem;
     outline: none;
 }
 
 button {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     width: 100%;
     padding: 0.8rem;
     border: none;
