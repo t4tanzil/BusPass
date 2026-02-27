@@ -52,7 +52,33 @@ function updateFooterCountdown() {
 
     document.querySelector(".timer").innerText = `${h}:${m}:${s}`;
 }
+// READ FROM & TO FROM URL
+function getRouteParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+        from: params.get("from"),
+        to: params.get("to")
+    };
+}
+
+function updateLocationText() {
+    const { from, to } = getRouteParams();
+
+    if (!from || !to) return;
+
+    const fromIndex = parseInt(from) - 1;
+    const toIndex = parseInt(to) - 1;
+
+    if (stations[fromIndex] && stations[toIndex]) {
+        document.querySelector(".location").innerText =
+            `${stations[fromIndex]} to ${stations[toIndex]} - Weekday Group Pass for 2`;
+    }
+    else {
+        document.querySelector(".location").innerText = "Allandale Waterfront GO to Bradford GO - Weekday Group Pass for 2";
+    }
+}
+
 
 setInterval(updateFooterCountdown, 1000);
 updateFooterCountdown();
-
+updateLocationText();

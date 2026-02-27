@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: #0b3d0b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Card */
+.container {
+    background: white;
+    color: #0b3d0b;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin: 0.8rem 0 0.3rem;
+}
+
+select {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 2px solid #0b7a2f;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    background: #0b7a2f;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #095d22;
+}
