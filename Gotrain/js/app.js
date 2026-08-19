@@ -34,23 +34,19 @@ function updateActivationTime() {
 
 setInterval(updateActivationTime, 1000);
 updateActivationTime();
+// BIG COUNTDOWN TIMER
+let countdownSeconds = 4 * 60 * 60; // 4 hours = 14400 seconds
 
-    // BIG COUNTDOWN TIMER 
 function updateFooterCountdown() {
-    const now = new Date();
-
-    const endOfDay = new Date();
-    endOfDay.setHours(3, 59, 59, 999);
-
-    let diff = Math.floor((endOfDay) / 1000);
-
-    if (diff < 0) diff = 0;
-
-    const h = String(Math.floor(diff / 3600)).padStart(2, "0");
-    const m = String(Math.floor((diff % 3600) / 60)).padStart(2, "0");
-    const s = String(diff % 60).padStart(2, "0");
+    const h = String(Math.floor(countdownSeconds / 3600)).padStart(2, "0");
+    const m = String(Math.floor((countdownSeconds % 3600) / 60)).padStart(2, "0");
+    const s = String(countdownSeconds % 60).padStart(2, "0");
 
     document.querySelector(".timer").innerText = `${h}:${m}:${s}`;
+
+    if (countdownSeconds > 0) {
+        countdownSeconds--;
+    }
 }
 // READ FROM & TO FROM URL
 function getRouteParams() {
