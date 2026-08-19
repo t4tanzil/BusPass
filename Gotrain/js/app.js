@@ -74,7 +74,7 @@ function updateLocationText() {
             `${stations[fromIndex]} to ${stations[toIndex]}`;
     }
     else {
-        document.querySelector(".location").innerText = "Allandale Waterfront GO to Bradford GO - Weekday Group Pass for 2";
+        document.querySelector(".location").innerText = "Allandale Waterfront GO to Bradford GO";
     }
 }
 
