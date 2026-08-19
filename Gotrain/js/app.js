@@ -42,7 +42,7 @@ function updateFooterCountdown() {
     const endOfDay = new Date();
     endOfDay.setHours(3, 59, 59, 999);
 
-    let diff = Math.floor((endOfDay - now) / 1000);
+    let diff = Math.floor((endOfDay) / 1000);
 
     if (diff < 0) diff = 0;
 
