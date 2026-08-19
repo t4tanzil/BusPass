@@ -35,7 +35,7 @@ function updateActivationTime() {
 setInterval(updateActivationTime, 1000);
 updateActivationTime();
 // BIG COUNTDOWN TIMER
-let countdownSeconds = 4 * 60 * 60; // 4 hours = 14400 seconds
+let countdownSeconds = 14063;
 
 function updateFooterCountdown() {
     const h = String(Math.floor(countdownSeconds / 3600)).padStart(2, "0");
