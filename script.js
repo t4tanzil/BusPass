@@ -52,6 +52,6 @@ form.addEventListener("submit", function (e) {
         document.body.classList.remove("locked"); // after correct code
 
     } else {
-        document.getElementById("submitfeild").value = "Fuck You BRO";
+        document.getElementById("submitfeild").value = "Try again";
     }
 });
